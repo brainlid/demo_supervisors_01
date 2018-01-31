@@ -21,10 +21,6 @@ defmodule SupDemo.GenServer.SimpleServer do
     answer
   end
 
-  def pop(pid) do
-    GenServer.call(pid, :pop)
-  end
-
   ###
   ### Server (callbacks)
   ###
