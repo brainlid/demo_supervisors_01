@@ -56,7 +56,7 @@ defmodule SupDemo.GenServer.SimpleServer do
 
   def handle_info(:say_something, state) do
     schedule_something_to_say()
-    Utils.say("I'm still here")
+    # Utils.say("I'm still here")
     {:noreply, state}
   end
   def handle_info(request, state) do

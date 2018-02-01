@@ -51,6 +51,7 @@ defmodule SupDemo.Utils do
   def color_func(:blue), do: &ANSI.blue/0
   def color_func(:green), do: &ANSI.green/0
   def color_func(:magenta), do: &ANSI.magenta/0
+  def color_func(:red), do: &ANSI.red/0
 
   def color_func(other) do
     IO.puts("UNSUPPORTED COLOR: #{inspect other}")

@@ -10,7 +10,8 @@ defmodule SupDemo.Application do
     children = [
       # Starts a worker by calling: SupDemo.Worker.start_link(arg)
       # {SupDemo.Worker, arg},
-      {SupDemo.GenServer.SimpleServer, nil}
+      {SupDemo.GenServer.SimpleServer, nil},
+      {SupDemo.DynSup, nil},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
