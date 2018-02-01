@@ -23,9 +23,8 @@ defmodule SupDemo.GenServer.CompareSpawn do
         answer
     after
       5_000 ->
-        message = "Timed out waiting!"
-        Utils.say(message)
-        {:error, message}
+        Utils.say("Timed out waiting!")
+        Kernel.exit(:timed_out_and_gave_up)
     end
   end
 
